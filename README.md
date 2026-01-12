@@ -1,2 +1,16 @@
 # UpdateACCaccountUsers
 example code use at own risk: updates default company and default role for ACC accounts users based on csv
+
+created by openai gpt based on the following prompt:
+"Hi, I need a C# script that leverages APS ACC API to update default company and default role for account users on an ACC account. Given a csv file with columns: email, default company, default role. For simplicity - if possible - do not use the APS .NET SDK, but the core REST calls offered by APS API."
+
+Code worked, but needed some correction:
+ai thought that the role needs to be resolved, but that's not the case. Also the role attribute is called default_role and not default_role_id. There might be some misleadings comments remaining in the code.
+
+CSV example:
+email,default company,default role
+theuser1@domain.de,TheNewDefaultCompany,TheNewRole
+theuser2@domain.de,TheNewDefaultCompany,TheNewRole
+
+example call via Dos prompt:
+UpdateACCaccountUsers --clientId xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --clientSecret xxxxxxxxxxxxxxxx --accountId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --csv "C:\Users\theuser\Downloads\users.csv" --region US --scope "account:read account:write" --impersonateUserId xxxxxxxxxxxx
