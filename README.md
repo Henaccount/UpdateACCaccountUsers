@@ -1,6 +1,21 @@
 # UpdateACCaccountUsers
 example code use at own risk: updates default company and default role for ACC accounts users based on csv
 
+<table border=1><tr><td><i>Disclaimer – AI-Generated Code
+
+This code was generated in whole or in part using artificial intelligence tools. While efforts have been made to review and validate the output, AI-generated code may contain errors, omissions, or unintended behavior.
+
+Users of this code should be aware that:
+
+The code may not follow best practices for security, performance, or reliability.
+Vulnerabilities may be present, including but not limited to injection flaws, insecure dependencies, or improper handling of data.
+The code may be susceptible to issues arising from prompt manipulation (e.g., prompt injection) or unintended generation of unsafe logic.
+No guarantees are made regarding correctness, completeness, or fitness for a particular purpose.
+
+It is strongly recommended that this code be thoroughly reviewed, tested, and audited—especially before use in production or security-sensitive environments.
+
+The authors disclaim any liability for damages or issues arising from the use of this code.</i></td></tr></table>
+
 <pre>
 created by openai gpt based on the following prompt:
 "Hi, I need a C# script that leverages APS ACC API to update default company and default role for account users on an ACC account. Given a csv file with columns: email, default company, default role. For simplicity - if possible - do not use the APS .NET SDK, but the core REST calls offered by APS API."
